@@ -1,5 +1,10 @@
 
 print("H A N G M A N")
 word = __import__("random").choice(('python', 'java', 'kotlin', 'javascript'))
-guess = input(f"Guess the word {'-' * len(word)}:")
-print(("You lost!", "You survived!")[guess == word])
+secret_word = '-' * len(word)
+list_entered_letter = []
+for _ in range(8):
+    print()
+    print(secret_word)
+    guess = input(f"Input a letter: ")
+
